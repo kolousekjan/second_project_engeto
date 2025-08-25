@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Filmy – Netflix</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <a href="./index.html"><img src="./images/netflix-logo.png" alt="Logo" class="logo" /></a>
+        </div>
+        <nav>
+            <a class="btn btn--primary" href="./index.html">Hlavní stránka</a>
+        </nav>
+    </header>
+
+    <main class="movies">
+        <form id="search-form" class="search">
+            <label for="q" class="visually-hidden">Hledat</label>
+            <input id="q" name="q" list="q-options" placeholder="Zadej slovo nebo vyber…" />
+            <datalist id="q-options">
+                <option value="girl"></option>
+                <option value="man"></option>
+                <option value="love"></option>
+                <option value="star"></option>
+                <option value="war"></option>
+            </datalist>
+            <button type="submit" class="btn btn--primary">Hledat</button>
+        </form>
+
+        <div id="results" class="grid"></div>
+    </main>
+
+    <button class="to-top" aria-label="Zpět nahoru" hidden>
+        <i class="fa-regular fa-circle-up"></i>
+    </button>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Netflix</p>
+    </footer>
+
+    <script type="module" src="./js/movies.js"></script>
+</body>
+</html>
+

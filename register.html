@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registrace – Netflix</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <a href="./index.html"><img src="./images/netflix-logo.png" alt="Logo" class="logo" /></a>
+        </div>
+        <nav>
+            <a class="btn btn--primary" href="./index.html">Hlavní stránka</a>
+        </nav>
+    </header>
+
+    <main class="register">
+        <form id="register-form" class="form">
+            <h1>Vytvoř si účet</h1>
+            <label>Jméno a příjmení
+                <input type="text" name="name" required minlength="3" />
+            </label>
+
+            <label>Email
+                <input type="email" name="email" required placeholder="tvuj@email.cz" />
+            </label>
+
+            <label>Heslo
+                <input type="password" name="password" required minlength="6" />
+            </label>
+
+            <label>Heslo znovu
+                <input type="password" name="password2" required minlength="6" />
+            </label>
+
+            <button type="submit" class="btn btn--primary">Registrovat</button>
+
+            <p id="password-hint" class="hint" aria-live="polite"></p>
+        </form>
+    </main>
+
+    <button class="to-top" aria-label="Zpět nahoru" hidden>
+        <i class="fa-regular fa-circle-up"></i>
+    </button>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Netflix</p>
+    </footer>
+
+    <script type="module" src="./js/register.js"></script>
+</body>
+</html>
+

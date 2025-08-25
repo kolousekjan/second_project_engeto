@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./images/netflix-logo.png" />
+    <meta name="description" content="Homepage – Netflix">
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+           <a href="./index.html"><img src="./images/netflix-logo.png" alt="Logo" class="logo" /></a>
+        </div>
+        <nav>
+            <a class="btn btn--primary" href="./register.html">Registrace</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1>Neomezené sledování filmů, TV pořadů a dalšího obsahu</h1>
+                <p>Už od 239 Kč. Zruště kdykoliv</p>
+                <p>Jste připraveni se dívat? Pro vytvoření nebo obnovení členství zadejte e-mail.</p>
+                <div class="hero__cta">
+                    <input type="email" placeholder="Zadejte e‑mail" aria-label="E-mail" />
+                    <a class="btn btn--primary" href="#">Začít</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="tiles">
+                <figure class="tile">
+                    <img src="./images/avengers.jpg" alt="Avengers" />
+                </figure>
+                <figure class="tile">
+                    <img src="./images/bugs-life.jpeg" alt="Život brouka" />
+                </figure>
+                <figure class="tile">
+                    <img src="./images/moana.jpeg" alt="Moana" />
+                </figure>
+            </div>
+            <div class="gallery__cta">
+                <a class="btn btn--primary" href="./movies.html">Najít další filmy</a>
+            </div>
+        </section>
+
+    </main>
+
+    <button class="to-top" aria-label="Zpět nahoru" hidden>
+        <i class="fa-regular fa-circle-up"></i>
+    </button>
+
+    <section class="footer-links">
+        <div class="footer-links__inner">
+            <div class="footer-links__cols">
+                <nav class="footer-links__col">
+                    <ul>
+                        <li><a href="#">Často kladené otázky</a></li>
+                        <li><a href="#">Vztahy s investory</a></li>
+                        <li><a href="#">Jak se dívat</a></li>
+                        <li><a href="#">Podnikové informace</a></li>
+                        <li><a href="#">Právní oznámení</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-links__col" >
+                    <ul>
+                        <li><a href="#">Centrum zákaznické podpory</a></li>
+                        <li><a href="#">Kariéra</a></li>
+                        <li><a href="#">Podmínky používání</a></li>
+                        <li><a href="#">Kontaktujte nás</a></li>
+                        <li><a href="#">Uvádí jedině Netflix</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-links__col">
+                    <ul>
+                        <li><a href="#">Účet</a></li>
+                        <li><a href="#">Uplatněte dárkové poukazy</a></li>
+                        <li><a href="#">Soukromí</a></li>
+                        <li><a href="#">Test rychlosti</a></li>
+                        <li><a href="#">Reklamy</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-links__col" >
+                    <ul>
+                        <li><a href="#">Pro média</a></li>
+                        <li><a href="#">Koupit dárkové poukazy</a></li>
+                        <li><a href="#">Nastavení souborů cookie</a></li>
+                        <li><a href="#">Právní záruka</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Netflix</p>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
+
